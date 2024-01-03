@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Post Fairs PDF</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap");
+
+            * {
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body {
+                width: 273mm;
+                margin: 0 auto;
+                font-family: Montserrat;
+                background: #eff1f3;
+            }
+            page[size="A4"] {
+                position: relative;
+                height: 386.3mm;
+                overflow: hidden;
+                display: block;
+            }
+            .fair-page-img {
+                width: 100%;
+                height: 100%;
+            }
+            .watermark {
+                position: absolute;
+                width: 540px;
+                height: 94px;
+                top: 50%;
+                left: 64mm;
+                pointer-events: none;
+            }
+            .watermark-bg {
+                background: url("https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/watermark_afd463161f.png");
+            }
+            .watermark-bg-white {
+                background: url("https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/watermark_white_c7c1a80d55.png");
+            }
+            /* must-visit-university-page start */
+            #must-visit-university-page {
+                background: #eff1f3;
+                padding: 20px;
+            }
+            #must-visit-university-page .cardContainer {
+                position: relative;
+            }
+            .cardContainer {
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 20px;
+            }
+            .stepContainer {
+                margin: 16px 10px;
+                padding: 10px 16px 10px 12px;
+                border-radius: 9px;
+                position: relative;
+            }
+            .limit-step-height {
+                max-height: 369mm;
+                overflow: hidden;
+            }
+            .stepContainer > table:nth-child(2) > tbody > tr:last-child > td {
+                border-bottom: none !important;
+            }
+            .stepContainer > table:nth-child(2) {
+                padding-left: 47px;
+            }
+            .titleContainer {
+                margin-bottom: 4px;
+            }
+            .title {
+                color: #000;
+                padding-left: 10px;
+            }
+            .taskName {
+                font-size: 20px;
+                margin: 0;
+                font-weight: 600;
+                margin-bottom: 6px;
+            }
+            .taskDescription {
+                color: #6d6d6d;
+                font-size: 18px;
+                margin-top: 6px;
+            }
+            .dueDateContainer {
+                margin-bottom: 6px;
+            }
+            .dueDate {
+                color: #fff;
+                background-color: #f16621;
+                padding: 4px 6px;
+                border-radius: 4px;
+                margin-left: 16px;
+                font-size: 18px;
+            }
+            .taskTitle {
+                font-size: 18px;
+                padding: 5px 0;
+            }
+            .subTaskDate {
+                color: #f16621;
+                font-size: 18px;
+                padding: 5px 0;
+            }
+            #jourey-page {
+                background: #eff1f3;
+                position: relative;
+                padding: 20px;
+            }
+            #jourey-page .cardContainer {
+                position: relative;
+            }
+            .headingText {
+                text-align: center;
+                font-size: 24px;
+                font-weight: 500;
+            }
+            .userNameText {
+                font-size: 24px;
+                font-weight: 700;
+            }
+            .readytoFlyDate {
+                color: #f16621;
+            }
+            .titleImage {
+                width: 34.35px;
+                height: 30px;
+                object-fit: contain;
+                margin-right: 10px;
+            }
+            .headerHolder {
+                margin-bottom: 16px;
+            }
+            .imageContainer {
+                vertical-align: top;
+            }
+            .image {
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+                padding: 5px;
+                border-radius: 50%;
+            }
+            footer {
+                margin-top: 8px;
+                text-align: center;
+            }
+            .description {
+                color: #8b8989;
+                font-size: 14px;
+            }
+            .contact {
+                color: #8b8989;
+                font-size: 14px;
+            }
+            .email {
+                color: #78a5ff;
+            }
+
+            @media print {
+                @page {
+                    border: none;
+                    box-shadow: none;
+                }
+                .pagebreak {
+                    page-break-before: always;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <page size="A4">
+            <img
+                src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/01_fair_pdf_3ee9cb0a13.png"
+                alt="01_fair_pdf"
+                class="fair-page-img"
+            />
+            <div class="watermark watermark-bg-white"></div>
+        </page>
+        <page size="A4">
+            <img
+                src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/02_fair_pdf_bbf507049a.png"
+                alt="02_fair_pdf"
+                class="fair-page-img"
+            />
+            <div class="watermark watermark-bg"></div>
+        </page>
+        <page size="A4">
+            <img
+                src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/03_fair_pdf_c9e1033d23.png"
+                alt="03_fair_pdf"
+                class="fair-page-img"
+            />
+            <div class="watermark watermark-bg"></div>
+        </page>
+        <page size="A4" id="jourey-page">
+            <table class="headerHolder" align="center">
+                <td>
+                    <img
+                        src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/journey_logo_05a15be98c.png"
+                        class="titleImage"
+                    />
+                </td>
+                <td>
+                    <span class="userNameText">Hey {{profile.first_name}} {{profile.last_name}}, </span>
+                    <span class="headingText">{{widgets['task_001'].banner_title}}
+                        {% if widgets['task_001'].banner_title == "You’ll be ready to fly" %}
+                        on {% set last = widgets['task_005'].sub_tasks|last %}
+                        <span class="readytoFlyDate">{{last.get('due_date').strftime("%d %b, %Y") if last.get('due_date') else ''}}</span>
+                        {% endif %}
+                    </span>
+                </td>
+            </table>
+            <div class="cardContainer">
+                <div class="stepContainer" style="background-color: #fff5ed">
+                    <table class="titleContainer">
+                        <tr style="width: 100%">
+                            <td class="imageContainer">
+                                <img
+                                    src="{{widgets['task_001'].task_current_icon}}"
+                                    class="image"
+                                    style="background: #e4ae74"
+                                />
+                            </td>
+                            <td class="title">
+                                <div class="dueDateContainer">
+                                    <span class="taskName">{{widgets['task_001'].task_name}}</span>
+                                    {% set last = widgets['task_001'].sub_tasks|last %}
+                                    <span class="dueDate"
+                                        >{{last.get('due_date').strftime("%d %b, %Y") if
+                                        last.get('due_date') else ''}}</span
+                                    >
+                                </div>
+                                <span class="taskDescription"
+                                    >{{widgets['task_001'].task_description}}</span
+                                >
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="width: 100%">
+                        {% for item in widgets['task_001'].sub_tasks %}
+                        <tr style="width: 100%">
+                            <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #e4ae74">
+                                {{item.subtask_name}}
+                            </td>
+                            <td
+                                class="subTaskDate"
+                                align="right"
+                                style="border-bottom: 1.5px solid #e4ae74"
+                            >
+                                {% if item.is_done %}
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 15 15"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle cx="7.5" cy="7.5" r="7.5" fill="#00C853"></circle>
+                                    <path
+                                        d="M4.2002 7.79999L6.3002 9.89999L11.4002 4.79999"
+                                        stroke="white"
+                                    ></path>
+                                </svg>
+                                {% else %} {{item.get('due_date').strftime("%d %b, %Y") if
+                                item.get('due_date') else ''}} {%endif%}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+                <div class="stepContainer" style="background-color: #e4ffe4">
+                    <table class="titleContainer">
+                        <tr style="width: 100%">
+                            <td class="imageContainer">
+                                <img
+                                    src="{{widgets['task_002'].task_current_icon}}"
+                                    class="image"
+                                    style="background: #b4eab4"
+                                />
+                            </td>
+                            <td class="title">
+                                <div class="dueDateContainer">
+                                    <span class="taskName">{{widgets['task_002'].task_name}}</span>
+                                    {% set last = widgets['task_002'].sub_tasks|last %}
+                                    <span class="dueDate"
+                                        >{{last.get('due_date').strftime("%d %b, %Y") if
+                                        last.get('due_date') else ''}}</span
+                                    >
+                                </div>
+                                <span class="taskDescription"
+                                    >{{widgets['task_002'].task_description}}</span
+                                >
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="width: 100%">
+                        {% for item in widgets['task_002'].sub_tasks %}
+                        <tr style="width: 100%">
+                            <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #b4eab4">
+                                {{item.subtask_name}}
+                            </td>
+                            <td
+                                class="subTaskDate"
+                                align="right"
+                                style="border-bottom: 1.5px solid #b4eab4"
+                            >
+                                {% if item.is_done %}
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 15 15"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle cx="7.5" cy="7.5" r="7.5" fill="#00C853"></circle>
+                                    <path
+                                        d="M4.2002 7.79999L6.3002 9.89999L11.4002 4.79999"
+                                        stroke="white"
+                                    ></path>
+                                </svg>
+                                {% else %} {{item.get('due_date').strftime("%d %b, %Y") if
+                                item.get('due_date') else ''}} {%endif%}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+                <div class="stepContainer" style="background-color: #e3f1ff">
+                    <table class="titleContainer">
+                        <tr style="width: 100%">
+                            <td class="imageContainer">
+                                <img
+                                    src="{{widgets['task_003'].task_current_icon}}"
+                                    class="image"
+                                    style="background-color: #c7e1fb"
+                                />
+                            </td>
+                            <td class="title">
+                                <div class="dueDateContainer">
+                                    <span class="taskName">{{widgets['task_003'].task_name}}</span>
+                                    {% set last = widgets['task_003'].sub_tasks|last %}
+                                    <span class="dueDate"
+                                        >{{last.get('due_date').strftime("%d %b, %Y") if
+                                        last.get('due_date') else ''}}</span
+                                    >
+                                </div>
+                                <span class="taskDescription"
+                                    >{{widgets['task_003'].task_description}}</span
+                                >
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="width: 100%">
+                        {% for item in widgets['task_003'].sub_tasks %}
+                        <tr style="width: 100%">
+                            <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #c7e1fb">
+                                {{item.subtask_name}}
+                            </td>
+                            <td
+                                class="subTaskDate"
+                                align="right"
+                                style="border-bottom: 1.5px solid #c7e1fb"
+                            >
+                                {% if item.is_done %}
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 15 15"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle cx="7.5" cy="7.5" r="7.5" fill="#00C853"></circle>
+                                    <path
+                                        d="M4.2002 7.79999L6.3002 9.89999L11.4002 4.79999"
+                                        stroke="white"
+                                    ></path>
+                                </svg>
+                                {% else %} {{item.get('due_date').strftime("%d %b, %Y") if
+                                item.get('due_date') else ''}} {%endif%}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+                <div class="stepContainer" style="background-color: #fff5ed">
+                    <table class="titleContainer">
+                        <tr style="width: 100%">
+                            <td class="imageContainer">
+                                <img
+                                    src="{{widgets['task_004'].task_current_icon}}"
+                                    class="image"
+                                    style="background: #e4ae74"
+                                />
+                            </td>
+                            <td class="title">
+                                <div class="dueDateContainer">
+                                    <span class="taskName">{{widgets['task_004'].task_name}}</span>
+                                    {% set last = widgets['task_004'].sub_tasks|last %}
+                                    <span class="dueDate"
+                                        >{{last.get('due_date').strftime("%d %b, %Y") if
+                                        last.get('due_date') else ''}}</span
+                                    >
+                                </div>
+                                <span class="taskDescription"
+                                    >{{widgets['task_004'].task_description}}</span
+                                >
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="width: 100%">
+                        {% for item in widgets['task_004'].sub_tasks %}
+                        <tr style="width: 100%">
+                            <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #e4ae74">
+                                {{item.subtask_name}}
+                            </td>
+                            <td
+                                class="subTaskDate"
+                                align="right"
+                                style="border-bottom: 1.5px solid #e4ae74"
+                            >
+                                {% if item.is_done %}
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 15 15"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle cx="7.5" cy="7.5" r="7.5" fill="#00C853"></circle>
+                                    <path
+                                        d="M4.2002 7.79999L6.3002 9.89999L11.4002 4.79999"
+                                        stroke="white"
+                                    ></path>
+                                </svg>
+                                {% else %} {{item.get('due_date').strftime("%d %b, %Y") if
+                                item.get('due_date') else ''}} {%endif%}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+                <div class="stepContainer" style="background-color: #e4ffe4">
+                    <table class="titleContainer">
+                        <tr style="width: 100%">
+                            <td class="imageContainer">
+                                <img
+                                    src="{{widgets['task_005'].task_current_icon}}"
+                                    class="image"
+                                    style="background: #b4eab4"
+                                />
+                            </td>
+                            <td class="title">
+                                <div class="dueDateContainer">
+                                    <span class="taskName">{{widgets['task_005'].task_name}}</span>
+                                    {% set last = widgets['task_005'].sub_tasks|last %}
+                                    <span class="dueDate"
+                                        >{{last.get('due_date').strftime("%d %b, %Y") if
+                                        last.get('due_date') else ''}}</span
+                                    >
+                                </div>
+                                <span class="taskDescription"
+                                    >{{widgets['task_005'].task_description}}</span
+                                >
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="width: 100%">
+                        {% for item in widgets['task_005'].sub_tasks %}
+                        <tr style="width: 100%">
+                            <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #b4eab4">
+                                {{item.subtask_name}}
+                            </td>
+                            <td
+                                class="subTaskDate"
+                                align="right"
+                                style="border-bottom: 1.5px solid #b4eab4"
+                            >
+                                {% if item.is_done %}
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 15 15"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle cx="7.5" cy="7.5" r="7.5" fill="#00C853"></circle>
+                                    <path
+                                        d="M4.2002 7.79999L6.3002 9.89999L11.4002 4.79999"
+                                        stroke="white"
+                                    ></path>
+                                </svg>
+                                {% else %} {{item.get('due_date').strftime("%d %b, %Y") if
+                                item.get('due_date') else ''}} {%endif%}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+            <footer>
+                <div class="description">
+                    To get a more personalised and accurate timetable, talk to our experts now on Azent
+                    app
+                </div>
+                <div class="contact">
+                    for any queries reach out us at
+                    <span class="email">hello@azent.com</span>
+                </div>
+            </footer>
+            <div class="watermark watermark-bg"></div>
+        </page>
+        <page size="A4" id="must-visit-university-page">
+            <div class="cardContainer">
+                <div class="stepContainer limit-step-height" style="background-color: #fff5ed">
+                    <table class="titleContainer">
+                        <tr style="width: 100%">
+                            <td class="imageContainer">
+                                <img
+                                    src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/Group_725_950893dc84.svg"
+                                    class="image"
+                                    style="background: #e4ae74"
+                                />
+                            </td>
+                            <td class="title">
+                                <div class="dueDateContainer">
+                                    <span class="taskName">{{ fair_details['fair_name'] }}</span>
+{#                                    <span class="dueDate">30 Jul, 2023</span>#}
+                                </div>
+                                <span class="taskDescription"
+                                    >Universities you have met today are mentioned below. To make applications
+                                    for any of these universities, please connect with your counsellor at your
+                                    earliest.</span
+                                >
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="width: 100%">
+                        {% for item in universities %}
+                        <tr style="width: 100%">
+                            <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #e4ae74">
+                                {{ item['university_name'] }}
+                            </td>
+                            <td class="subTaskDate" align="right" style="border-bottom: 1.5px solid #e4ae74">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 15 15"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle cx="7.5" cy="7.5" r="7.5" fill="#00C853"></circle>
+                                    <path
+                                        d="M4.2002 7.79999L6.3002 9.89999L11.4002 4.79999"
+                                        stroke="white"
+                                    ></path>
+                                </svg>
+                            </td>
+                        </tr>
+                        {% endfor %}
+{#                        <tr style="width: 100%">#}
+{#                            <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #e4ae74">#}
+{#                                Intake#}
+{#                            </td>#}
+{#                            <td class="subTaskDate" align="right" style="border-bottom: 1.5px solid #e4ae74">#}
+{#                                <svg#}
+{#                                    width="20"#}
+{#                                    height="20"#}
+{#                                    viewBox="0 0 15 15"#}
+{#                                    fill="none"#}
+{#                                    xmlns="http://www.w3.org/2000/svg"#}
+{#                                >#}
+{#                                    <circle cx="7.5" cy="7.5" r="7.5" fill="#00C853"></circle>#}
+{#                                    <path#}
+{#                                        d="M4.2002 7.79999L6.3002 9.89999L11.4002 4.79999"#}
+{#                                        stroke="white"#}
+{#                                    ></path>#}
+{#                                </svg>#}
+{#                            </td>#}
+{#                        </tr>#}
+{#                        <tr style="width: 100%">#}
+{#                            <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #e4ae74">#}
+{#                                Program#}
+{#                            </td>#}
+{#                            <td class="subTaskDate" align="right" style="border-bottom: 1.5px solid #e4ae74">#}
+{#                                30 Jul, 2023#}
+{#                            </td>#}
+{#                        </tr>#}
+</table>
+</div>
+<div class="watermark watermark-bg"></div>
+</div>
+        </page>
+        <page size="A4">
+            <a href="https://azentcompass.app.link/azent-fairs">
+                <img
+                    src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/06_fair_pdf_90fc638b09.png"
+                    alt="06_fair_pdf"
+                    class="fair-page-img"
+                />
+            </a>
+            <div class="watermark watermark-bg-white"></div>
+        </page>
+    </body>
+</html>

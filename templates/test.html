@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Post Fairs PDF</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap");
+
+            * {
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body {
+                width: 210.2mm;
+                margin: 0 auto;
+                font-family: Montserrat;
+                background: #eff1f3;
+            }
+            page[size="A4"] {
+                height: 297mm;
+                overflow: hidden;
+                display: block;
+            }
+            .fair-page-img {
+                width: 100%;
+                height: 100%;
+            }
+
+            @media print {
+                @page {
+                    border: none;
+                    box-shadow: none;
+                }
+                .pagebreak {
+                    page-break-before: always;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <page size="A4">
+            <img
+                src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/01_fair_pdf_3ee9cb0a13.png"
+                alt="01_fair_pdf"
+                class="fair-page-img"
+            />
+        </page>
+        <page size="A4">
+            <img
+                src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/02_fair_pdf_bbf507049a.png"
+                alt="02_fair_pdf"
+                class="fair-page-img"
+            />
+        </page>
+        <page size="A4">
+            <img
+                src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/03_fair_pdf_c9e1033d23.png"
+                alt="03_fair_pdf"
+                class="fair-page-img"
+            />
+        </page>
+        <page size="A4">
+            <a href="https://www.azent.com">
+                <img
+                    src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/06_fair_pdf_90fc638b09.png"
+                    alt="06_fair_pdf"
+                    class="fair-page-img"
+                />
+            </a>
+        </page>
+    </body>
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <style>
+    body,
+    html {
+      margin: 0;
+      outline: 0;
+      font-family: Montserrat;
+    }
+
+    .watermark {
+      content: "";
+      position: absolute;
+      top: 0%;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      background: url("https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/Azent_logo_new_dec_486cb4f26e.svg");
+      opacity: 0.1;
+      pointer-events: none;
+      filter: grayscale(1);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 70%;
+      padding: 10px;
+      height: 185%;
+    }
+
+    .root {
+      background: #eff1f3;
+      padding: 20px 80px 80px 80px;
+    }
+
+    .logoContainer {
+      height: 40px;
+      background: #eff1f3;
+      padding: 8px;
+    }
+
+    .logo {
+      width: 150px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .headingText {
+      text-align: center;
+      font-size: 25px;
+      font-weight: 500;
+    }
+
+    .userNameText {
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    .titleImage {
+      width: 60px;
+      height: 50px;
+      object-fit: contain;
+      margin-right: 10px;
+    }
+
+    .headerHolder {
+      margin-bottom: 15px;
+    }
+
+    .dueDate {
+      color: #fff;
+      background-color: #f16621;
+      padding: 4px 6px;
+      border-radius: 4px;
+      margin-left: 16px;
+      font-size: 12px;
+    }
+
+    .dueDateContainer {
+      margin-bottom: 6px;
+    }
+
+    .stepContainer {
+      margin: 10px 10px 22px 10px;
+      padding: 16px;
+      border-radius: 9px;
+    }
+
+    .timetableContainer {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    .titleContainer {
+      margin-bottom: 8px;
+    }
+
+    .title {
+      font-size: 16px;
+      color: #000;
+      padding-left: 14px;
+    }
+
+    .taskName {
+      font-size: 18px;
+      margin: 0;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+   
+
+    .subTaskContainer {
+      margin-bottom: 8px;
+    }
+
+    .taskTitle {
+      font-size: 18px;
+      margin: 4px 0px 0px 0px;
+      padding-bottom: 8px;
+    }
+
+    .subTaskDate {
+      color: #f16621;
+      margin-bottom: 4px;
+      font-size: 16px;
+      padding-bottom: 8px;
+    }
+
+    .readytoFlyDate {
+      color: #f16621;
+    }
+
+    .image {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+      padding: 9px;
+      border-radius: 50%;
+    }
+
+    footer {
+      margin-top: 18px;
+      text-align: center;
+    }
+
+    .description {
+      color: #8b8989;
+      font-size: 14px;
+    }
+
+    .contact {
+      color: #8b8989;
+      font-size: 14px;
+    }
+
+    .email {
+      color: #78a5ff;
+    }
+  </style>
+  <body>
+    <div class="watermark"></div>
+    <div class="logoContainer">
+      <img
+        src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/Azent_logo_new_dec_486cb4f26e.svg"
+        alt="logo"
+        class="logo"
+      />
+    </div>
+    <section class="root" id="timeTablePdf">
+      <table class="headerHolder" align="center">
+        <td>
+          <img
+            src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/Group_752_8526d4c2a2.svg"
+            class="titleImage"
+          />
+        </td>
+        <td>
+          <span class="userNameText">Hey jaya durga ,</span>
+          <span class="headingText"> You’ll be ready to fly by
+            <span class="readytoFlyDate">12th dec 2023</span>
+          </span>
+        </td>
+      </table>
+      <div class="timetableContainer">
+        <div class="stepContainer" style="background-color: #fff5edde">
+          <table class="titleContainer">
+            <tr style="width: 100%">
+              <td class="imageContainer">
+                <img
+                  src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/Group_17_f6e4605dc2.svg"
+                  class="image"
+                  style="background-color: #FFE6CC;"
+                />
+              </td>
+              <td class="title">
+                <div class="dueDateContainer">
+                  <span class="taskName">set your target</span>
+                </div>
+                <span class="taskDescription"
+                  >Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                  Lorem Ipsum</span
+                >
+              </td>
+            </tr>
+          </table>
+          <table style="width: 100%;">
+            <tr style="width: 100%;">
+              <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #f6deca">Get Package</td>
+              <td class="subTaskDate" align="right" style="border-bottom: 1.5px solid #f6deca">
+                <svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="#00C853"/>
+                  <path d="M4.2002 7.79999L6.3002 9.89999L11.4002 4.79999" stroke="white"/>
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #f6deca">Get Package</td>
+              <td class="subTaskDate" align="right" style="border-bottom: 1.5px solid #f6deca">
+                <svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="#00C853"/>
+                  <path d="M4.2002 7.79999L6.3002 9.89999L11.4002 4.79999" stroke="white"/>
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <td class="taskTitle" align="left">Get Package</td>
+              <td class="subTaskDate" align="right">
+                <svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="#00C853"/>
+                  <path d="M4.2002 7.79999L6.3002 9.89999L11.4002 4.79999" stroke="white"/>
+                </svg>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="stepContainer" style="background-color: #e4ffe4">
+          <table class="titleContainer">
+            <tr style="width: 100%">
+              <td class="imageContainer">
+                <img
+                  src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/Group_17_f6e4605dc2.svg"
+                  class="image"
+                  style="background :#B4EAB4"
+                />
+              </td>
+              <td class="title">
+                <div class="dueDateContainer">
+                  <span class="taskName">set your target</span>
+                  <span class="dueDate">15th Nov 2022</span>
+                </div>
+                <span class="taskDescription"
+                  >Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                  Lorem Ipsum</span
+                >
+              </td>
+            </tr>
+          </table>
+          <table style="width: 100%">
+            <tr style="width: 100%">
+              <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #b4eab4">
+                Get Package
+              </td>
+              <td class="subTaskDate" align="right" style="border-bottom: 1.5px solid #b4eab4">
+                <svg width="18" height="18" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="#00C853"/>
+                  <path d="M4.2002 7.79999L6.3002 9.89999L11.4002 4.79999" stroke="white"/>
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #b4eab4">Get Package</td>
+              <td class="subTaskDate" align="right" style="border-bottom: 1.5px solid #b4eab4">27th Oct 2022</td>
+            </tr>
+            <tr>
+              <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #b4eab4">Get Package</td>
+              <td class="subTaskDate" align="right" style="border-bottom: 1.5px solid #b4eab4">27th Oct 2022</td>
+            </tr>
+          </table>
+        </div>
+        <div class="stepContainer" style="background-color: #e3f1ff">
+          <table class="titleContainer">
+            <tr style="width: 100%">
+              <td class="imageContainer">
+                <img
+                  src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/Group_17_f6e4605dc2.svg"
+                  class="image"
+                  style="background-color: #C7E1FB;"
+                />
+              </td>
+              <td class="title">
+                <div class="dueDateContainer">
+                  <span class="taskName" >set your target</span>
+                  <span class="dueDate">15th Nov 2022</span>
+                </div>
+                <span class="taskDescription"
+                  >Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                  Lorem Ipsum</span
+                >
+              </td>
+            </tr>
+          </table>
+          <table style="width: 100%">
+            <tr style="width: 100%">
+              <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #c7e1fb">Get Package</td>
+              <td class="subTaskDate" align="right" style="border-bottom: 1.5px solid #c7e1fb">27th Oct 2022</td>
+            </tr>
+            <tr>
+              <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #c7e1fb">Get Package</td>
+              <td class="subTaskDate" align="right" style="border-bottom: 1.5px solid #c7e1fb">27th Oct 2022</td>
+            </tr>
+            <tr>
+              <td class="taskTitle" align="left">Get Package</td>
+              <td class="subTaskDate" align="right">27th Oct 2022</td>
+            </tr>
+          </table>
+        </div>
+        <div class="stepContainer" style="background-color: #fff5edde">
+          <table class="titleContainer">
+            <tr style="width: 100%">
+              <td class="imageContainer">
+                <img
+                  src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/Group_17_f6e4605dc2.svg"
+                  class="image"
+                  style="background-color: #FFE6CC;"
+                />
+              </td>
+              <td class="title">
+                <div class="dueDateContainer">
+                  <span class="taskName">set your target</span>
+                  <span class="dueDate">15th Nov 2022</span>
+                </div>
+                <span class="taskDescription"
+                  >Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                  Lorem Ipsum</span
+                >
+              </td>
+            </tr>
+          </table>
+          <table style="width: 100%">
+            <tr style="width: 100%">
+              <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #f6deca">Get Package</td>
+              <td class="subTaskDate" align="right" style="border-bottom: 1.5px solid #f6deca">27th Oct 2022</td>
+            </tr>
+            <tr>
+              <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #f6deca">Get Package</td>
+              <td class="subTaskDate" align="right" style="border-bottom: 1.5px solid #f6deca">27th Oct 2022</td>
+            </tr>
+            <tr>
+              <td class="taskTitle" align="left">Get Package</td>
+              <td class="subTaskDate" align="right">27th Oct 2022</td>
+            </tr>
+          </table>
+        </div>
+        <div class="stepContainer" style="background-color: #e4ffe4">
+          <table class="titleContainer">
+            <tr style="width: 100%">
+              <td class="imageContainer">
+                <img
+                  src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/Group_17_f6e4605dc2.svg"
+                  class="image"
+                  style="background :#B4EAB4"
+                />
+              </td>
+              <td class="title">
+                <div class="dueDateContainer">
+                  <span class="taskName">set your target</span>
+                  <span class="dueDate">15th Nov 2022</span>
+                </div>
+                <span class="taskDescription"
+                  >Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                  Lorem Ipsum</span
+                >
+              </td>
+            </tr>
+          </table>
+          <table style="width: 100%">
+            <tr style="width: 100%">
+              <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #b4eab4">Get Package</td>
+              <td class="subTaskDate" align="right" style="border-bottom: 1.5px solid #b4eab4">27th Oct 2022</td>
+            </tr>
+            <tr>
+              <td class="taskTitle" align="left" style="border-bottom: 1.5px solid #b4eab4">Get Package</td>
+              <td class="subTaskDate" align="right" style="border-bottom: 1.5px solid #b4eab4">27th Oct 2022</td>
+            </tr>
+            <tr>
+              <td class="taskTitle" align="left" >Get Package</td>
+              <td class="subTaskDate" align="right">27th Oct 2022</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <footer>
+        <div class="description">
+          To get a more personalised and accurate timetable, talk to our experts
+          now on Azent app
+        </div>
+        <div class="contact">
+          for any queries reach out us at
+          <span class="email">hello@azent.com</span>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
