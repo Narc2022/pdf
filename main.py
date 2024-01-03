@@ -9,11 +9,11 @@ def hello_world():
         'page-size': 'A4',
         'margin-top': '0.2in',
         'margin-right': '0.2in',
-        'margin-bottom': '0.2in',
+        'margin-bottom': '0.4in',
         'margin-left': '0.4in',
         'encoding': "UTF-8",
         'custom-header': [('Accept-Encoding', 'gzip')]}
-    dynamic_html = render_template('page2.html')
+    dynamic_html = render_template('main.html')
     print(dynamic_html)
     pdf = pdfkit.from_string(dynamic_html, False, options=options)
 
