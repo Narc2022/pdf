@@ -18,7 +18,6 @@
       .pdf-header-container {
         width: 877px;
         height: 1303px;
-        /* border: 1px solid black; */
         background: #eff1f3;
       }
 
@@ -70,10 +69,14 @@
         display: flex;
       }
       .profile-picture {
-        margin: 10px 13.47px 10px 27px;
-        height: 100%;
-        display: flex;
-        justify-content: center;
+        height: 89.53px;
+        width: 89.53px;
+        background-color: #00c853;
+        border-radius: 50%;
+        background-image: url("https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/Group_715_97f3cfbd4a.svg?updated_at=2024-01-04T06:21:58.929Z");
+        position: relative;
+        top: -19px;
+        margin: 10px;
       }
       .profile-content {
         height: 100%;
@@ -91,7 +94,9 @@
         border-radius: 50%;
         width: 55px;
         height: 55px;
-        border: 4px solid white;
+        position: relative;
+        top: 17px;
+        left: 17.5px;
       }
       .profile-picture-container {
         width: 69px;
@@ -144,16 +149,9 @@
       .action .button {
         width: 206px;
         height: 30px;
-        /* background: white;
-        border-radius: 27.5px;
-        border: 1px #00c853 solid;
-        text-align: center;
-        padding-top: 9px;
-        color: #00c853; */
       }
       /***************************** about section *********************************/
       .about-container {
-        /* background: #f7f7f7; */
         border-radius: 14.79px;
         width: 724px;
         min-height: 277px;
@@ -163,7 +161,6 @@
       .about-container .about {
         width: 440px;
         height: 100%;
-        /* background: grey; */
         text-align: left;
         margin-left: 15px;
       }
@@ -277,7 +274,7 @@
         word-wrap: break-word;
       }
 
-      /* info-note */
+      /********************************* info-note *********************************/
       .info-note-container {
         margin-left: 8.55%;
         margin-top: 16px;
@@ -289,15 +286,14 @@
         background: #f8ef9c;
         border-radius: 10.79px;
         border: 1px solid #f8ef9c;
-        /*  */
         color: #636363;
         font-size: 13px;
         font-family: Montserrat;
         font-weight: 500;
         word-wrap: break-word;
       }
-      /* page 2 css end*/
-      /* page 3 css */
+      /********************************* page 2 css end *********************************/
+      /********************************* page 3 css *********************************/
       .main-container {
         width: 703px;
         min-height: 969px;
@@ -307,7 +303,7 @@
         border-radius: 14.79px;
         border: 1px solid white;
       }
-      /* section-container */
+      /********************************* section-container *********************************/
       .section-container {
         width: 661px;
         min-height: 162px;
@@ -342,7 +338,6 @@
       .heading-container {
         width: 100%;
         margin-top: 10.24;
-        /* background: red; */
       }
       .page3-heading table {
         margin: 0px 0px 0px 200px;
@@ -420,7 +415,7 @@
         height: auto;
         margin-left: 87px;
       }
-      /* page 3 css end */
+      /********************************* page 3 css end *********************************/
     </style>
   </head>
   <body>
@@ -654,13 +649,18 @@
                   <tr>
                     <td>
                       <div class="profile-picture">
-                        <div class="profile-picture-container">
+                        <!-- <div class="profile-picture-container">
                           <img
                             class="profile-img"
                             src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/profile_a50fa7b65c.png?updated_at=2023-12-29T11:51:26.066Z"
                             alt=""
                           />
-                        </div>
+                        </div> -->
+                        <img
+                          class="profile-img"
+                          src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/profile_a50fa7b65c.png?updated_at=2023-12-29T11:51:26.066Z"
+                          alt=""
+                        />
                       </div>
                     </td>
                     <td>
@@ -746,8 +746,6 @@
                   what you need to do tomove to the next level -
                 </div>
                 <!-- testing 2 -->
-                <!-- <div class="upload-document-list"> -->
-                <!-- <div class="upload-description"> -->
                 <ul>
                   <table>
                     <tr>
@@ -770,8 +768,6 @@
                     </tr>
                   </table>
                 </ul>
-                <!-- </div> -->
-                <!-- </div> -->
                 <!-- testing 2 -->
                 <div class="upload-actions" style="margin: 23px auto">
                   <a
@@ -779,7 +775,11 @@
                     target="_blank"
                   >
                     <div class="upload-button">
-                      <span class="upload-button-text"><img src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/Group_893_c54b51b9f5.svg?updated_at=2024-01-04T06:09:03.963Z" alt="" srcset=""></span>
+                      <span class="upload-button-text"><img
+                          src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/Group_893_c54b51b9f5.svg?updated_at=2024-01-04T06:09:03.963Z"
+                          alt=""
+                          srcset=""
+                      /></span>
                     </div>
                   </a>
                 </div>
