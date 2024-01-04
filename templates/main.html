@@ -96,9 +96,6 @@
       .profile-picture-container {
         width: 69px;
         height: 69px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background: #f56a20;
         border-radius: 50%;
         border: 9.28px solid #e4e0df;
@@ -147,12 +144,12 @@
       .action .button {
         width: 206px;
         height: 30px;
-        background: white;
+        /* background: white;
         border-radius: 27.5px;
         border: 1px #00c853 solid;
         text-align: center;
         padding-top: 9px;
-        color: #00c853;
+        color: #00c853; */
       }
       /***************************** about section *********************************/
       .about-container {
@@ -347,6 +344,10 @@
         margin-top: 10.24;
         /* background: red; */
       }
+      .page3-heading table {
+        margin: 0px 0px 0px 200px;
+        width: 500px;
+      }
       .taskName {
         color: black;
         font-size: 14px;
@@ -413,39 +414,11 @@
         height: 5px;
       }
 
-      .watermark {
-        content: "";
-        position: absolute;
-        top: 650px;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: url("https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/Azent_logo_new_dec_486cb4f26e.svg");
-        background-position-x: 0%;
-        background-position-y: 0%;
-        background-repeat: repeat;
-        background-size: auto;
-        background-position-x: 0%;
-        background-position-y: 0%;
-        background-repeat: repeat;
-        background-size: auto;
-        opacity: 0.1;
-        pointer-events: none;
-        filter: grayscale(1);
-        background-repeat: no-repeat;
-        background-position: center center;
-        /* background-size: 40%; */
-        /* padding: 10px; */
-        height: 100px;
-      }
-
       /***************************** end-section-container ****************************/
       .footer {
         width: 703px;
         height: auto;
-        /* background: red; */
         margin-left: 87px;
-        /* margin-top: 25px; */
       }
       /* page 3 css end */
     </style>
@@ -465,7 +438,7 @@
     </page>
     <!-- page 2 html -->
     <page size="A4">
-      <div class="container" style="margin-bottom: 100px;">
+      <div class="container" style="margin-bottom: 100px">
         <div class="pdf-header-container-2">
           <div class="header">
             <svg
@@ -716,7 +689,12 @@
                             style="text-decoration: none"
                           >
                             <div class="button">
-                              <span>Talk to Counsellor</span>
+                              <!-- <span>Talk to Counsellor</span> -->
+                              <img
+                                src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/Group_900_7f9e844b68.svg?updated_at=2024-01-04T06:18:32.982Z"
+                                alt=""
+                                srcset=""
+                              />
                             </div>
                           </a>
                         </div>
@@ -724,13 +702,8 @@
                     </td>
                   </tr>
                 </table>
-
-                <!-- testing -->
-
-                <!--  -->
               </div>
             </div>
-            <!--  -->
             <div class="about-upload-container">
               <div class="about-container">
                 <table>
@@ -806,7 +779,7 @@
                     target="_blank"
                   >
                     <div class="upload-button">
-                      <span class="upload-button-text">Upload Documents</span>
+                      <span class="upload-button-text"><img src="https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/Group_893_c54b51b9f5.svg?updated_at=2024-01-04T06:09:03.963Z" alt="" srcset=""></span>
                     </div>
                   </a>
                 </div>
@@ -846,7 +819,7 @@
     <!-- page 2 html ends-->
     <!-- page 3 html -->
     <page size="A4">
-      <div class="container" style="background: #eff1f3;">
+      <div class="container" style="background: #eff1f3">
         <div class="pdf-header-container">
           <div class="header">
             <svg
@@ -901,8 +874,8 @@
             </svg>
           </div>
           <div class="body">
-            <div class="heading">
-              <table>
+            <div class="page3-heading">
+              <table class="">
                 <tr>
                   <td>
                     <svg
@@ -973,7 +946,32 @@
               </table>
             </div>
             <div class="main-container">
-              <div class="watermark"></div>
+              <div
+                class="watermark"
+                style="
+                  content: '';
+                  position: absolute;
+                  top: 3348px;
+                  right: 0;
+                  bottom: 0;
+                  left: 0;
+                  background: url('https://production-azent-website-cms-uploads.s3.ap-south-1.amazonaws.com/Azent_logo_new_dec_486cb4f26e.svg');
+                  background-position-x: 0%;
+                  background-position-y: 0%;
+                  background-repeat: repeat;
+                  background-size: auto;
+                  background-position-x: 0%;
+                  background-position-y: 0%;
+                  background-repeat: repeat;
+                  background-size: auto;
+                  opacity: 0.1;
+                  pointer-events: none;
+                  filter: grayscale(1);
+                  background-repeat: no-repeat;
+                  background-position: center center;
+                  height: 100px;
+                "
+              ></div>
               <div class="section-container">
                 <div class="heading-container">
                   <table class="titleContainer">
